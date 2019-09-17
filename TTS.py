@@ -7,7 +7,7 @@ radio.on() #radio is on
 
 while True: #pretty much while microbit is on
 
-    speech.say("A for send B for receive")
+    speech.say("A for send B for receive", speed=100)
     display.scroll("A for send B for receive", delay=200, wait=True, monospace=False) #display info
 
     if button_a.was_pressed(): #tests if button A was pressed and if it is sends a string to other radio's in same channel
@@ -15,6 +15,6 @@ while True: #pretty much while microbit is on
 
     if button_b.was_pressed(): #tests if button B was pressed and displays the msg received
         msg = radio.receive()
-        speech.say(msg)
+        speech.say(msg, speed=100)
         display.scroll(msg, delay=200, wait=True, monospace=False)
         
