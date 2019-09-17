@@ -11,7 +11,7 @@ while True: #pretty much while microbit is on
     display.scroll("A for send B for receive", delay=200, wait=True, monospace=False) #display info
 
     if button_a.was_pressed(): #tests if button A was pressed and if it is sends a string to other radio's in same channel
-            radio.send("Msg from ID:01")
+            radio.send("Yasir is TOO ALPHA")
 
     if button_b.was_pressed(): #tests if button B was pressed and displays the msg received
         msg = radio.receive()
