@@ -1,2 +1,2 @@
 # Microbit-Python-Interface
-Just some code
+Some Python 3 code to communicate with a Microbit
